@@ -10,7 +10,7 @@ gulp.task('watch', function () {
 });
 
 gulp.task('sass', function () {
-    gulp.src('./scss/style.scss')
+    gulp.src(['./scss/style.scss', './scss/editor-style.scss'])
         .pipe(sass({errLogToConsole: true}))
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
