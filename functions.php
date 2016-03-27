@@ -12,5 +12,5 @@ sidebars, comments, etc.
 require_once( 'library/bones.php' );
 
 // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
-require_once( 'library/custom-post-type.php' );
+//require_once( 'library/custom-post-type.php' );
 
