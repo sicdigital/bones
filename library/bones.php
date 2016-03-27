@@ -110,7 +110,7 @@ function bones_scripts_and_styles() {
 		wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
 		// register main stylesheet
-		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
+		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/dist/style.css', array(), '', 'all' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -281,7 +281,7 @@ Let's get everything up and running.
 function bones_ahoy() {
 
 	//Allow editor style.
-	add_editor_style( get_stylesheet_directory_uri() . '/library/css/editor-style.css' );
+	add_editor_style( get_stylesheet_directory_uri() . '/library/dist/editor-style.css' );
 
 	// let's get language support going, if you need it
 	load_theme_textdomain( 'bonestheme', get_template_directory() . '/library/translation' );
