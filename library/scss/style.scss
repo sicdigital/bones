@@ -1,6 +1,10 @@
+@import "settings/variables";
+@import "settings/animations";
+
 @import "partials/normalize";
 @import "partials/variables";
 @import "partials/typography";
+
 @import "modules/alerts";
 @import "modules/buttons";
 @import "modules/forms";
