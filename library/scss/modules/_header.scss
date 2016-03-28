@@ -3,11 +3,13 @@ HEADER STYLES
 *********************/
 
 .header {
+  display: flex;
+  flex-direction: column;
   background-color: $black;
 }
 
 #logo {
-  margin: 0.75em 0;
+
 
   a {
     color: $white;
