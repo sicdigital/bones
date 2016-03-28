@@ -500,7 +500,3 @@ $GLOBALS['comment'] = $comment; ?>
 	}
 
 	add_action('wp_enqueue_scripts', 'bones_fonts');
-
-
-
-?>
