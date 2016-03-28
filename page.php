@@ -57,9 +57,6 @@
 							<?php endwhile; endif; ?>
 
 						</main>
-
-						<?php get_sidebar(); ?>
-
 				</div>
 
 			</div>
