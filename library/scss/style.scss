@@ -4,10 +4,15 @@
 @import "partials/normalize";
 @import "partials/variables";
 @import "partials/typography";
+@import "partials/links";
+@import "partials/headings";
 
 @import "modules/alerts";
 @import "modules/buttons";
 @import "modules/forms";
+@import "modules/navigation";
+@import "modules/_post-content";
+
 @import "breakpoints/base";
 
 @media only screen and (min-width: 481px) {
