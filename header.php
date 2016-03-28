@@ -31,9 +31,7 @@
 						<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
 						<?php do_action('after_logo');?>
 					</div>
-
 				</div>
-
 
 				<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 					<div class="nav-inner">
