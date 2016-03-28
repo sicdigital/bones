@@ -24,16 +24,19 @@
 		<div id="container">
 
 			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
-
+				<?php do_action('begin_header');?>
 				<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 					<div class="logo-inner">
+						<?php do_action('before_logo');?>
 						<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+						<?php do_action('after_logo');?>
 					</div>
+
 				</div>
 
 
 				<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-					<div class="nav-inner wrap">
+					<div class="nav-inner">
 						<?php wp_nav_menu(array(
 							'container' => false,                           // remove nav container
 							'container_class' => 'menu',                 // class of container (should you choose to use it)
@@ -49,6 +52,7 @@
 						)); ?>
 					</div>
 				</nav>
+				<?php do_action('end_header');?>
 			</header>
 
 

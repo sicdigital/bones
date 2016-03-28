@@ -3,7 +3,7 @@ FOOTER STYLES
 *********************/
 
 .footer {
-  clear: both;
+  display: flex;
   background-color: $black;
   color: $light-gray;
 }
