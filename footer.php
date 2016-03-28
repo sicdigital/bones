@@ -9,4 +9,5 @@
 			<?php wp_footer(); ?>
 		<?php do_action('end_body')?>
 	</body>
-</html>
+
+</html> <!-- end of site. what a ride! -->

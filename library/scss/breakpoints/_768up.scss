@@ -23,8 +23,9 @@ body {}
 LAYOUT & GRID STYLES
 *********************/
 
-.wrap {
+.nav-inner, .footer-inner, .logo-inner {
 	max-width: 760px;
+    margin: auto;
 }
 
 /*********************
@@ -40,18 +41,14 @@ NAVIGATION STYLES
 *********************/
 
 .nav {
-	border: 0;
+  flex-direction: row;
 	ul {
-		background:$black;
-		margin-top:0;
-	}
+
+    }
 	li {
-		float: left;
-		position: relative;
 
 		a {
 			border-bottom: 0;
-
 			/*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.
