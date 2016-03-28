@@ -111,6 +111,7 @@ function bones_scripts_and_styles() {
 
 		// register main stylesheet
 		wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/dist/style.css', array(), '', 'all' );
+	  	wp_register_style( 'sic-custom-stylesheet', get_stylesheet_directory_uri() . 'custom.css', array(), '', 'all' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -123,6 +124,7 @@ function bones_scripts_and_styles() {
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
 		wp_enqueue_style( 'bones-stylesheet' );
+	    wp_enqueue_style( 'sic-custom-stylesheet' );
 
 		/*
 		I recommend using a plugin to call jQuery
