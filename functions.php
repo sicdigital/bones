@@ -12,6 +12,14 @@ sidebars, comments, etc.
 require_once( 'library/bones.php' );
 require_once( 'library/theme-options.php' );
 
+add_action('logo', 'sic_logo');
+
+	if(!function_exists('sic_logo')){
+		function sic_logo(){
+			echo '<a href="'  . home_url() . '" rel="nofollow">' . get_bloginfo('name') . '</a>';
+		}
+	}
+
 // USE THIS TEMPLATE TO CREATE CUSTOM POST TYPES EASILY
 //require_once( 'library/custom-post-type.php' );
 

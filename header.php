@@ -28,12 +28,12 @@
 				<div id="logo" class="h1" itemscope itemtype="http://schema.org/Organization">
 					<div class="logo-inner">
 						<?php do_action('before_logo');?>
-						<a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
+						<?php do_action('logo')?>
 						<?php do_action('after_logo');?>
 					</div>
 				</div>
 
-				<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+				<nav role="navigation" class="nav-container" itemscope itemtype="http://schema.org/SiteNavigationElement">
 					<div class="nav-inner">
 						<?php wp_nav_menu(array(
 							'container' => false,                           // remove nav container

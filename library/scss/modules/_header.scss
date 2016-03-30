@@ -5,13 +5,10 @@ HEADER STYLES
 .header {
   display: flex;
   flex-direction: column;
-  background-color: $black;
 }
 
 #logo {
-
-
   a {
-    color: $white;
+    color: $black;
   }
 }
