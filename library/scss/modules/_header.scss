@@ -1,6 +1,7 @@
 /*********************
 HEADER STYLES
-*********************/
+***************
+******/
 
 .header {
   display: flex;
@@ -8,7 +9,7 @@ HEADER STYLES
 }
 
 #logo {
-  a {
+  a.logo-img {
     color: $black;
   }
 }

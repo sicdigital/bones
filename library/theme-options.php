@@ -7,7 +7,7 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_slug' 	=> 'sic-theme-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> true,
-		'icon_url'		=> get_stylesheet_directory_uri() . '/library/images/sic-logo-no-black32x32.png'
+		'icon_url'		=> get_template_directory_uri() . '/library/images/sic-logo-no-black32x32.png'
 	));
 
 	acf_add_options_sub_page(array(
