@@ -110,6 +110,13 @@ function loadGravatars() {
 */
 jQuery(document).ready(function($) {
 
+	$('[data-nav="toggle"]').click(function(){
+		if($('body').hasClass('nav-active')){
+			$('body').removeClass('nav-active')
+		}else{
+			$('body').addClass('nav-active');
+		}
+	})
   /*
    * Let's fire off the gravatar function
    * You can remove this if you don't need it
